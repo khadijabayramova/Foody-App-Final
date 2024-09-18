@@ -1,0 +1,676 @@
+{
+  "info": {
+    "_postman_id": "f7100081-0fc6-497f-ad62-cdd32a8b23a5",
+    "name": "FoodyApp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "14043219"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"r17@gmail.com\",\n    \"password\":\"serxan1111\"\n  }\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000/api/auth/signin"
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"r17@gmail.com\",\n    \"password\":\"serxan1111\"\n  }\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000/api/auth/signin"
+          },
+          "response": []
+        },
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"r17@gmail.com\",\n    \"password\":\"serxan1111\",\n    \"fullname\":\"Johnt Doe\",\n    \"username\":\"jonny\"\n    \n  }\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000/api/auth/signup"
+          },
+          "response": []
+        },
+        {
+          "name": "User",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxODczNzA5LCJleHAiOjE2OTE4NzczMDl9.YZazmiYXhQHnl-2x1ofVv0HGf0n8sL50SIoKMpVCANc",
+                "type": "text"
+              }
+            ]
+          },
+          "response": [],
+          "url": "http://localhost:3000/api/auth/user"
+        },
+        {
+          "name": "User",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxODczNzA5LCJleHAiOjE2OTE4NzczMDl9.YZazmiYXhQHnl-2x1ofVv0HGf0n8sL50SIoKMpVCANc",
+                "type": "text"
+              }
+            ]
+          },
+          "url": "http://localhost:3000/api/auth/user",
+
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Basket",
+      "item": [
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxODczNzA5LCJleHAiOjE2OTE4NzczMDl9.YZazmiYXhQHnl-2x1ofVv0HGf0n8sL50SIoKMpVCANc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"product_id\": \"3OZrQowRZs69hGrhTXHI\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000/api/basket/add"
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxODczNzA5LCJleHAiOjE2OTE4NzczMDl9.YZazmiYXhQHnl-2x1ofVv0HGf0n8sL50SIoKMpVCANc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"product_id\": \"1WWPGY2jFFy4Ol0LmpUN\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000/api/basket/delete"
+          },
+          "response": []
+        },
+        {
+          "name": "clear",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxODczNzA5LCJleHAiOjE2OTE4NzczMDl9.YZazmiYXhQHnl-2x1ofVv0HGf0n8sL50SIoKMpVCANc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000/api/basket/clear"
+          },
+          "response": []
+        },
+        {
+          "name": "basket",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxODczNzA5LCJleHAiOjE2OTE4NzczMDl9.YZazmiYXhQHnl-2x1ofVv0HGf0n8sL50SIoKMpVCANc",
+                "type": "text"
+              }
+            ],
+            "url": "http://localhost:3000/api/basket"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxOTI5NTQ4LCJleHAiOjE2OTE5MzMxNDh9.T7XO9M_eNVIEojFR8MqcPzJRqA78ZptgQ5sKDi4d06E",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n\"basket_id\":\"\",\n\"delivery_address\":\"29 Eve Street, 543 Evenue Road, Ny 87876\",\n\"contact\":\"9944445566\",\n\"payment_method\":0\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://foody-api.vercel.app//api/order"
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxOTI5NTQ4LCJleHAiOjE2OTE5MzMxNDh9.T7XO9M_eNVIEojFR8MqcPzJRqA78ZptgQ5sKDi4d06E",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"order_id\":\"QAQWGXoCuFYgigtvrbXd\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000//api/order"
+          },
+          "response": []
+        },
+        {
+          "name": "user",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxOTI5NTQ4LCJleHAiOjE2OTE5MzMxNDh9.T7XO9M_eNVIEojFR8MqcPzJRqA78ZptgQ5sKDi4d06E",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://foody-api.vercel.app//api/order/user"
+          },
+          "response": []
+        },
+        {
+          "name": "history",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxOTI5NTQ4LCJleHAiOjE2OTE5MzMxNDh9.T7XO9M_eNVIEojFR8MqcPzJRqA78ZptgQ5sKDi4d06E",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://foody-api.vercel.app//api/order/hsitory"
+          },
+          "response": []
+        },
+        {
+          "name": "list",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ODdQWUtCZ0dNaFZvSW5nS0JQc3BsOTRMR1oyIiwiaWF0IjoxNjkxOTQ5MDk0LCJleHAiOjE2OTE5NTI2OTR9.LDkhsWPFeUarCASKR2yiSEW9AEiTgxTtdhnB5RPCJa0",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3000//api/order"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Restuarant",
+      "item": [
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_LOCAL}}/restuarants?search=kebab",
+              "host": ["{{BASE_LOCAL}}"],
+              "path": ["restuarants"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "kebab"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "restuarantById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{BASE_PROD}}/restuarants/ma9j4ocaGb4cvN5C63WA"
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Ramiz Kebab\",\n    \"cuisine\":\"Turkish Meat ,Chicken, Drink, Ice Cream, \",\n    \"delivery_price\":3.4,\n    \"delivery_min\":104,\n     \"img_url\":\"https://media-cdn.tripadvisor.com/media/photo-p/16/f6/e2/8d/mixed-beef.jpg\",\n    \"address\":\"Sahil street 25 Baku Azerbaijan\",\n    \"category_id\":\"YiVJvca0Ir0ovyRlLsQb\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{BASE_PROD}}/restuarants"
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{BASE_PROD}}/restuarants/zURzhNMcPPyPtgLDuYam"
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Ramiz Kebab 1\",\n    \"cuisine\": \"Turkish Meat ,Chicken, Drink, Ice Cream, \",\n    \"delivery_price\": 3.4,\n    \"img_url\": \"https://media-cdn.tripadvisor.com/media/photo-p/16/f6/e2/8d/mixed-beef.jpg\",\n    \"delivery_min\": 104,\n    \"address\": \"Sahil street 25 Baku Azerbaijan\",\n    \"category_id\": \"YiVJvca0Ir0ovyRlLsQb\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{BASE_PROD}}/restuarants/zURzhNMcPPyPtgLDuYam"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_LOCAL}}/restuarants?search=kebab",
+              "host": ["{{BASE_LOCAL}}"],
+              "path": ["restuarants"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "kebab"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "productById",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{BASE_LOCAL}}/restuarants"
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{BASE_LOCAL}}/restuarants/zURzhNMcPPyPtgLDuYam"
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Ramiz Kebab\",\n    \"cuisine\": \"Turkish Meat ,Chicken, Drink, Ice Cream, \",\n    \"delivery_price\": 3.4,\n    \"img_url\": \"https://media-cdn.tripadvisor.com/media/photo-p/16/f6/e2/8d/mixed-beef.jpg\",\n    \"delivery_min\": 104,\n    \"address\": \"Sahil street 25 Baku Azerbaijan\",\n    \"category_id\": \"YiVJvca0Ir0ovyRlLsQb\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{BASE_LOCAL}}/restuarants/zURzhNMcPPyPtgLDuYam"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_LOCAL}}/restuarants?search=kebab",
+              "host": ["{{BASE_LOCAL}}"],
+              "path": ["restuarants"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "kebab"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "categoryById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{BASE_LOCAL}}/category/YiVJvca0Ir0ovyRlLsQb"
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n            \"img_url\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJRxKZ4zYMS-NBSAO7MQAm5gEsWa72382tkKO_vXP_mEuL5TVqxWcm1KKGjtWQa7oAZI&usqp=CAU\",\n            \"name\": \"Fast Food tasty\",\n            \"slug\": \"fast-food\"\n        }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{BASE_LOCAL}}/category"
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{BASE_LOCAL}}/restuarants/zURzhNMcPPyPtgLDuYam"
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Fast Food tasty new\",\n    \"img_url\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJRxKZ4zYMS-NBSAO7MQAm5gEsWa72382tkKO_vXP_mEuL5TVqxWcm1KKGjtWQa7oAZI&usqp=CAU\",\n    \"slug\": \"fast-food-tasty\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{BASE_LOCAL}}/category/t57NXudxtDknXnzKOMcO"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Offer",
+      "item": [
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_LOCAL}}/restuarants?search=kebab",
+              "host": ["{{BASE_LOCAL}}"],
+              "path": ["restuarants"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "kebab"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "offerById",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "            {\n                \"id\": \"FlRh7bHqYPL4fLc6HHb9\",\n                \"img_url\": \"https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*\",\n                \"name\": \"Do you like Pizza at Papa John’s?\",\n                \"description\": \"Yes you like pizza,Yummy\"\n            }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{BASE_LOCAL}}/offer"
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{BASE_LOCAL}}/restuarants/zURzhNMcPPyPtgLDuYam"
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Ramiz Kebab\",\n    \"cuisine\": \"Turkish Meat ,Chicken, Drink, Ice Cream, \",\n    \"delivery_price\": 3.4,\n    \"img_url\": \"https://media-cdn.tripadvisor.com/media/photo-p/16/f6/e2/8d/mixed-beef.jpg\",\n    \"delivery_min\": 104,\n    \"address\": \"Sahil street 25 Baku Azerbaijan\",\n    \"category_id\": \"YiVJvca0Ir0ovyRlLsQb\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{BASE_LOCAL}}/restuarants/zURzhNMcPPyPtgLDuYam"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Uploads",
+      "item": [
+        {
+          "name": "uploads",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+                "key": "Content-Type",
+                "value": "multipart/form-data; boundary=---XXX---",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "value": "a.jpg",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{BASE_LOCAL}}/uploads"
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "FOODY_URL",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "FOODY_BASE",
+      "value": "FOODY_URL"
+    },
+    {
+      "key": "BASE_LOCAL",
+      "value": "http://localhost:3000/api/"
+    },
+    {
+      "key": "BASE_PROD",
+      "value": "https://foody-api.vercel.app/api/"
+    }
+  ]
+}
