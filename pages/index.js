@@ -8,5 +8,10 @@ console.log("Auth Data from .env:", authData);
 console.log("Auth Key:", authData.type);
 
 export default function index() {
-  return <div>salammmmm</div>;
+  return (
+    <div>
+      salammmmm
+      <h2>parii</h2>
+    </div>
+  );
 }
