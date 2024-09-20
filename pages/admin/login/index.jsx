@@ -1,9 +1,9 @@
 import React from 'react'
 
-const index = () => {
+function Login() {
   return (
     <div>
-      <h1>vrfr</h1>
+      
     </div>
   )
 }
