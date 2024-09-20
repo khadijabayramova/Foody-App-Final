@@ -4,8 +4,7 @@ import React from "react";
 export default function index() {
   return (
     <div>
-      salammmmm
-      <h2>pariief3f</h2>
+      <h2>parii</h2>
     </div>
   );
 }
