@@ -1,19 +1,12 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { useRouter } from "next/router";
-import axios from "axios";
-import { useEffect } from "react";
-const config = require("../configs/config.json");
+import React from "react";
+import config from "../configs/config.js";
 
-const projectId = config.project_id;
-const privateKey = config.private_key;
-const clientEmail = config.client_email;
-console.log(projectId, privateKey, clientEmail);
-export default function Home(props) {
-  let { name } = props;
-  return (
-    <div>
-      <h1>{(name = "Hello World")}</h1>
-    </div>
-  );
+const authData = require("../configs/config.js");
+
+console.log("Auth Data from .env:", authData);
+
+console.log("Auth Key:", authData.type);
+
+export default function index() {
+  return <div>salammmmm balashka</div>;
 }
