@@ -15,7 +15,7 @@ export default function Navbar() {
               height={32}
             />
           </div>
-          <div className="flex items-center justify-center gap-6 font-semibold text-white">
+          <div className="flex items-center justify-center gap-6 font-semibold ">
             <div>
               <button className="w-32 h-7 bg-btnColor rounded-xl p-4 flex justify-start items-center ">
                 + add
