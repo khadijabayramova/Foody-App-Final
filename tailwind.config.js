@@ -17,6 +17,7 @@ module.exports = {
         textColor: "#F2F2F2DE",
         btnColor: "#c035a2",
         hoverColor: "#cc60ed",
+        restautanColor: "#828282",
       },
     },
   },
