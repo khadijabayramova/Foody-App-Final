@@ -19,4 +19,19 @@ a {
 
 * {
   box-sizing: border-box;
+@layer base {
+  html,
+  body,
+  #__next {
+    @apply h-full bg-bgColor text-textColor;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  .wrapper {
+    @apply flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
 }
