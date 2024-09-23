@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Languages from "../admin-languages/page";
+import Languages from "../../../admin-languages/page";
 
 export default function Navbar() {
   return (

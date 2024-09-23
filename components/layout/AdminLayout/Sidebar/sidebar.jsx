@@ -11,7 +11,7 @@ const links = [
   },
   {
     name: "Restaurants",
-    href: "/admin/restaurants/page",
+    href: "/admin/restaurants",
     src: "/adminImgs/restr.svg",
   },
   {
@@ -26,7 +26,7 @@ const links = [
 
 export default function Sidebar() {
   return (
-    <aside className="w-1/5 bg-sidebarColor ml-2 rounded-xl ">
+    <aside className="w-1/5 bg-sidebarColor  rounded-xl ">
       <ul className="flex flex-col">
         {links.map((link) => (
           <li className="p-4">
