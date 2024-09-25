@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const links = [
-  { name: "Dashboard", href: "/", src: "/adminImgs/dashboard.svg" },
+  { name: "Dashboard", href: "/admin", src: "/adminImgs/dashboard.svg" },
   {
     name: "Products",
     href: "/admin/products/page",

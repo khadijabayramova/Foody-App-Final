@@ -3,7 +3,7 @@ import React from "react";
 export default function Button(props) {
   return (
     <>
-      <button>{props.innertext}</button>
+      <button className={props.className}>{props.innertext}</button>
     </>
   );
 }

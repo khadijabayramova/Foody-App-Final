@@ -1,6 +1,6 @@
 import React from "react";
 import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
-import Button from "../../../components/shared/Button";
+import Button from "../../../components/shared/Button/page.jsx";
 import RestarantCard from "../../../components/pages/restaurants/RestaurantCard/RestarantCard";
 
 export default function index() {
