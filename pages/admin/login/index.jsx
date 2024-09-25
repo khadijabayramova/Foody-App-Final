@@ -22,11 +22,10 @@ function Login() {
       </form>
       <div className="bg-white w-3/5 flex items-start justify-center py-3">
         <Image className="h-[400px] " src={loginHero} alt="loginHero" />
-        <Image  src={Flag} alt="flag" />
+        <Image src={Flag} alt="flag" />
       </div>
     </div>
   );
 }
 
-export default Login;
 export default Login;
