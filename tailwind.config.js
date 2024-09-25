@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         bgColor: "#1e1e30",
-        secMainColor: "#38394e",
+        secMainColor: "#27283C",
         sidebarColor: "#C74FEB",
         textColor: "#F2F2F2DE",
         btnColor: "#c035a2",

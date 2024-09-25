@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function RestarantCard({ name }) {
+export default function RestarantCard({ name, category }) {
   return (
     <div className="h-20 bg-white rounded-md flex items-center p-3 gap-4 text-black">
       <div>
@@ -14,7 +14,7 @@ export default function RestarantCard({ name }) {
       </div>
       <div>
         <h2 className="font-semibold text-lg ">{name}</h2>
-        <p className="text-restautanColor">Fast food</p>
+        <p className="text-restautanColor">{category}</p>
       </div>
     </div>
   );
