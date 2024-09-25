@@ -1,5 +1,5 @@
 import React from "react";
-import AddBtn from "../../../components/shared/Button/page";
+import Button from "../../../components/shared/Button";
 import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
 
 export default function Category() {
@@ -7,7 +7,7 @@ export default function Category() {
     <>
       <AdminLayout>
         <div className="w-[82%]">
-          <AddBtn name="Category" add="Add Category" />
+          <Button name="Category" add="Add Category" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
             deserunt? Omnis nulla explicabo quod fuga dolor possimus tenetur
