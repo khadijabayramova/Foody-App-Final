@@ -1,14 +1,19 @@
 import React from "react";
-import AddBtn from "../../../components/shared/Button/page";
 import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
 import CategoryTable from "../../../components/pages/category/CategoryTable/CategoryTable";
+import Button from "../../../components/shared/Button/page";
 
 export default function Category() {
   return (
     <>
       <AdminLayout>
         <div className="w-[82%]">
-          <AddBtn name="Category" add="Add Category" />
+          <Button
+            className="bg-btnColor rounded-xl p-2 text-center w-36"
+            name="Category"
+            add="Add Category"
+            innertext="+ Add Restaurant"
+          />
 
           <CategoryTable />
         </div>

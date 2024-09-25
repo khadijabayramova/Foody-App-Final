@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-export default function CategoryTable() {
+export default function CategoryTable({ props }) {
   return (
-    <table class="min-w-full bg-blue-400 border">
+    <table class="min-w-full bg-white text-black border mt-4">
       <thead>
         <tr>
           <th class="px-4 py-2 text-start">Id</th>
@@ -14,7 +14,7 @@ export default function CategoryTable() {
       </thead>
       <tbody>
         <tr>
-          <td class="px-4 py-2 border-y ">John</td>
+          <td class="px-4 py-2 border-y  ">John</td>
           <td class="px-4 py-2 border-y ">
             <Image
               src="/adminImgs/admin-category/fastfood.svg"
