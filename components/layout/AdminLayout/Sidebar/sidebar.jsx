@@ -19,14 +19,14 @@ const links = [
     href: "/admin/category",
     src: "/adminImgs/category.svg",
   },
-  { name: "Orders", href: "/admin/orders/page", src: "/adminImgs/orders.svg" },
-  { name: "Offer", href: "/admin/offer/page", src: "/adminImgs/offer.svg" },
-  { name: "Logout", href: "/admin/login/page", src: "/adminImgs/logout.svg" },
+  { name: "Orders", href: "/admin/orders", src: "/adminImgs/orders.svg" },
+  { name: "Offer", href: "/admin/offers", src: "/adminImgs/offer.svg" },
+  { name: "Logout", href: "/admin/login", src: "/adminImgs/logout.svg" },
 ];
 
 export default function Sidebar() {
   return (
-    <aside className="w-1/5 bg-sidebarColor  rounded-xl ">
+    <aside className="w-1/5 bg-sidebarColor rounded-xl h-[74vh]">
       <ul className="flex flex-col">
         {links.map((link) => (
           <li className="p-4">

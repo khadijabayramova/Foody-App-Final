@@ -10,14 +10,14 @@ export default function index() {
     <AdminLayout>
       <div className="w-[82%]">
         <Button
-          className="bg-btnColor rounded-xl p-2 text-center w-36"
+          className="bg-btnColor rounded-xl p-2 text-center  w-40 font-bold"
           name="Restaurants"
           innertext="+ Add Restaurant"
         />
 
         <div className="grid grid-cols-4 gap-4 mt-12">
-          {data.map((item) => (
-            <RestarantCard name="papajons" />
+          {data.map(() => (
+            <RestarantCard name="papajons" category="fast food" />
           ))}
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export default function CategoryTable(props) {
+export default function OffersTable(props) {
   return (
     <tbody>
       <tr>
@@ -13,8 +13,8 @@ export default function CategoryTable(props) {
             height={40}
           />
         </td>
-        <td class="px-8 py-4 border-y truncate max-w-10">{props.name}</td>
-        <td class="px-8 py-4 border-y truncate max-w-10">{props.slug}</td>
+        <td class="px-8 py-4 border-y truncate max-w-10">{props.title}</td>
+        <td class="px-8 py-4 border-y truncate max-w-10">{props.desc}</td>
         <td class="px-8 py-4 border-y">
           <div className="flex gap-2">
             <button>
