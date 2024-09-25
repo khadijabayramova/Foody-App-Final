@@ -1,10 +1,5 @@
 import React from "react";
-import AdminLayout from "../../components/layout/AdminLayout/AdminLayout";
 
-export default function AdminPage() {
-  return (
-    <div>
-      <AdminLayout />
-    </div>
-  );
+export default function index() {
+  return <div>home</div>;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../../components/shared/Button";
+import Button from "../../../components/shared/Button/page";
 import InputGroup from "../../../components/shared/InputGroup";
 import Image from "next/image";
 import loginHero from "../../../public/adminImgs/loginHero.svg";
