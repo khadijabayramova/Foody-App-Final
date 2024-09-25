@@ -16,7 +16,7 @@ const links = [
   },
   {
     name: "Category",
-    href: "/admin/category/page",
+    href: "/admin/category",
     src: "/adminImgs/category.svg",
   },
   { name: "Orders", href: "/admin/orders/page", src: "/adminImgs/orders.svg" },
