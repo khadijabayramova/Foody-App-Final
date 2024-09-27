@@ -18,8 +18,9 @@ module.exports = {
         btnColor: "#c035a2",
         hoverColor: "#cc60ed",
         restautanColor: "#828282",
+        bgcards: "#27283C",
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
 };
