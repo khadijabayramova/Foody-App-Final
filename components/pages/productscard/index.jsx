@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function ProductsCard() {
+export default function ProductsCard(props) {
   return (
 
     <div className="bg-white p-5 rounded-md h-[44vh]  text-black">
@@ -11,11 +11,11 @@ export default function ProductsCard() {
         height={200}
         alt="product img"
       />
-      <h2 className="text-bgColor text-[18px] font-[550]">Margherita</h2>
-      <p className="text-productsdesc">Papa John’s</p>
+      <h2 className="text-bgColor text-[18px] font-[550]">{props.title}</h2>
+      <p className="text-productsdesc">{props.restaurant}</p>
 
       <div className="flex justify-between">
-        <p className="text-productstitle">16.9$</p>
+        <p className="text-productstitle">{props.price}</p>
         <div className="flex gap-2">
           <Image
             width={20}
