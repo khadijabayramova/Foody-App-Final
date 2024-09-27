@@ -6,8 +6,8 @@ const links = [
   { name: "Dashboard", href: "/admin", src: "/adminImgs/dashboard.svg" },
   {
     name: "Products",
-    href: "/admin/products/page",
     src: "/adminImgs/product.svg",
+    href: "/admin/products",
   },
   {
     name: "Restaurants",
