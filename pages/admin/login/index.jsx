@@ -15,13 +15,9 @@ function Login() {
           className="flex w-3/6 h-[425px] justify-center items-center  bg-[#38394E] flex-col gap-10 "
         >
           <h1 className="text-3xl font-bold text-white">Welcome Admin</h1>
-          <InputGroup
-            placeholder1="Email"
-            placeholder2="Password"
-            type1="email"
-            type2="password"
-          />
-          <Button innertext="Sign in" />
+          <InputGroup type="email" placeholder=" Email" />
+          <InputGroup type="password" placeholder=" Password" />
+          <Button className="hover:opacity-80 active:opacity-85" innertext="Sign in" />
         </form>
         <div className="bg-white w-3/5 flex items-start justify-center py-3">
           <Image className="h-[400px] " src={loginHero} alt="loginHero" />
