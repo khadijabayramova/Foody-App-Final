@@ -3,7 +3,7 @@ import React from "react";
 export default function Sharebutton(props) {
   return (
     <div>
-      <button>{props.btnName} </button>
+      <button className={props.className}>{props.btnName} </button>
     </div>
   );
 }
