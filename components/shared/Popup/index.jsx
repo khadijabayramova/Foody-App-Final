@@ -3,7 +3,7 @@ import Sharebutton from "../sharebutton/index";
 
 export default function Popup() {
   return (
-    <div className="bg-bgpopup w-[30%] h-60 p-4 flex flex-col justify-center items-center gap-3">
+    <div className="bg-bgpopup absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30%] h-60 p-4 flex flex-col justify-center items-center gap-3">
       <h1 className="font-bold text-bgColor text-2xl">
         Are you sure it’s deleted?
       </h1>
