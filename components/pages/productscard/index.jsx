@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Image from "next/image";
-import GlobalContext from "../../../Context/globalcontext"; // Correct context path
+import {GlobalContext} from "../../../Context/globalcontext"; 
 
 export default function ProductsCard(props) {
   const { setOpenPopup } = useContext(GlobalContext);
