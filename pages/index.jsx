@@ -9,9 +9,11 @@ export default function Home() {
 
 
 
+
       <AdminLayout>
          <Orders/>
       </AdminLayout>
+
     </>
   );
 }

@@ -6,7 +6,7 @@ import Popup from "../../../components/shared/Popup/index";
 import { GlobalContext } from "../../../Context/globalcontext";
 
 export default function Productspage() {
-  const{openPopup}=useContext(GlobalContext)
+  const { openPopup } = useContext(GlobalContext);
   const data = new Array(15).fill(1);
 
   return (
@@ -24,7 +24,7 @@ export default function Productspage() {
           ))}
         </div>
 
-       {openPopup && <Popup />}
+        {openPopup && <Popup />}
       </div>
     </AdminLayout>
   );
