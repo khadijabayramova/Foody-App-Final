@@ -19,6 +19,17 @@ module.exports = {
         hoverColor: "#cc60ed",
         restautanColor: "#828282",
         bgcards: "#27283C",
+        productstitle: "#00B2A9",
+        productsdesc : "#8E8E93",
+        bgoptions:"#5A5B70",
+        bgadditional:"#38394E",
+        bgpopup:"#fff",
+        bgdelete:"#D63626",
+        textcancel:"#BDBDBD"
+      
+        
+
+        
       },
     },
   },
