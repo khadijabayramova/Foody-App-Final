@@ -28,6 +28,7 @@ export default function Offers() {
             {data.map(() => (
               <OffersTable
                 id="12122"
+                image="/adminImgs/admin-category/fastfood.svg"
                 title="fast food asdasdasdasdasdasdasdss asdasdasdasdasdasdasdssasdasdasdasdasdasdasdss"
                 desc="fastfood asdasdasdasdasdasdasdssasdasdasdasdasdasdasdss"
               />

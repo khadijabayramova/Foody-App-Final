@@ -1,15 +1,46 @@
+import Image from "next/image";
 import React from "react";
 
-function Tbody() {
+function Tbody(props) {
   return (
     <tr>
-      <td className=" px-4 py-2"><span className="border border-#DFE2E9 px-4 py-1 rounded-3xl">9177</span></td>
-      <td className=" px-4 py-2"><span className="border border-#DFE2E9 px-4 py-1 rounded-3xl">022401</span></td>
-      <td className=" px-4 py-2">25 Dec 2021</td>
-      <td className=" w-56 px-5 py-2">29 Eve Street, 543 Evenue Road, Ny 87876</td>
-      <td className=" px-4 py-2">$249.7 </td>
-      <td className=" px-4 py-2">Cash On Delivery</td>
-      <td className=" px-4 py-2">994-51-410-3130</td>
+      <td className="px-8 py-4 border-y">
+        <span className="border border-#DFE2E9 px-4 py-1 rounded-3xl">
+          {props.id}
+        </span>
+      </td>
+      <td className=" px-8 py-4 border-y">
+        <span className="border border-#DFE2E9 px-4 py-1 rounded-3xl">
+          {props.customerId}
+        </span>
+      </td>
+      <td className=" px-8 py-4 border-y">{props.time}</td>
+      <td className=" px-8 py-4 border-y">{props.deliveryAddress}</td>
+      <td className=" px-8 py-4 border-y">{props.amount}</td>
+      <td className="px-8 py-4 border-y text-center">
+        {props.paymentMethods}{" "}
+      </td>
+      <td className=" px-8 py-4 border-y">{props.contact}</td>
+      <td className=" px-8 py-4 border-y">
+        <div className="flex gap-2">
+          <button>
+            <Image
+              src="/adminImgs/editing/detail.svg"
+              width={20}
+              height={20}
+              alt="detail"
+            />
+          </button>
+          <button>
+            <Image
+              src="/adminImgs/editing/delete.svg"
+              width={20}
+              height={20}
+              alt="delete"
+            />
+          </button>
+        </div>
+      </td>
     </tr>
   );
 }
