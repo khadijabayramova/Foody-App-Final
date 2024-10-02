@@ -23,7 +23,7 @@ module.exports = {
         productsdesc : "#8E8E93",
         bgoptions:"#5A5B70",
         bgadditional:"#38394E",
-        bgpopup:"#fff",
+        bgwt:"#fff",
         bgdelete:"#D63626",
         textcancel:"#BDBDBD"
       
