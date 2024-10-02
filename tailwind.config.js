@@ -22,6 +22,14 @@ module.exports = {
         productstitle: "#00B2A9",
         productsdesc : "#8E8E93",
         bgoptions:"#5A5B70",
+        bgadditional:"#38394E",
+        bgwt:"#fff",
+        bgdelete:"#D63626",
+        textcancel:"#BDBDBD"
+      
+        
+
+        
       },
     },
   },

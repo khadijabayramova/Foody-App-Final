@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Sharebutton(props) {
+export default function Sharebutton({className, btnName, handleClicker}) {
   return (
     <div>
-      <button>{props.btnName} </button>
+      <button onClick={handleClicker} className={className}>
+        {btnName}
+      </button>
     </div>
   );
 }

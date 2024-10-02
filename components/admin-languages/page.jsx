@@ -22,7 +22,7 @@ export default function Languages() {
     <div className="relative inline-block w-32">
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between  p-2 border rounded-lg cursor-pointer "
+        className="flex items-center justify-between  p-2  rounded-lg cursor-pointer "
       >
         <div className="flex items-center">
           <Image
@@ -36,7 +36,7 @@ export default function Languages() {
       </div>
 
       {isOpen && (
-        <div className="absolute left-0 z-10 w-full mt-2 bg-[#27283C] border rounded-lg shadow-lg">
+        <div className="absolute left-0 z-10 w-full mt-2 bg-[#27283C]  rounded-lg shadow-lg">
           {languages.map((lang) => (
             <div
               key={lang.name}

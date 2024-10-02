@@ -1,13 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import Languages from "../../../admin-languages/page";
+import styles from "./Navbar.module.scss";
+import Button from "../../../shared/admin/Button/Button";
+import {
+  AddIcon,
+  BurgerIcon,
+} from "../../../../assets/images/admin/admin.vector";
 
 export default function Navbar() {
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div className="flex items-center justify-between w-[1500px] bg-secMainColor p-4 rounded-b-md">
-          <div>
+      <div className={styles.navbar}>
+        <div className={styles.navbar__box}>
+          <div className={styles.navbar__left}>
+            <button className={styles.burger__button}>
+              <BurgerIcon />
+            </button>
             <Image
               src="/adminImgs/logo.svg"
               alt="logo"
@@ -15,16 +24,12 @@ export default function Navbar() {
               height={32}
             />
           </div>
-          <div className="flex items-center justify-center gap-6 font-semibold ">
-            <div>
-              <button className="w-32 h-7 bg-btnColor rounded-xl p-4 flex justify-start items-center ">
-                + add
-              </button>
+          <div className={styles.navbar__right}>
+            <Button icon={AddIcon} hideTextOnMobile={true} />
+            <div className={styles.language}>
+              <Languages />
             </div>
-            <Languages />
-            <div>
-              <button>Admin</button>
-            </div>
+            <button>Admin</button>
           </div>
         </div>
       </div>
