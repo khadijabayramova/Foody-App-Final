@@ -7,9 +7,7 @@ import Faqs from "../components/faqs/index";
 export default function Home() {
   return (
     <>
-      <AdminLayout>
-        <Faqs />
-      </AdminLayout>
+      <Faqs />
     </>
   );
 }
