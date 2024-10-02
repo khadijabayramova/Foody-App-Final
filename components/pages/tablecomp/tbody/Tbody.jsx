@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Tbody(props) {
@@ -23,14 +24,14 @@ function Tbody(props) {
       <td className=" px-8 py-4 border-y">{props.contact}</td>
       <td className=" px-8 py-4 border-y">
         <div className="flex gap-2">
-          <button>
+          <Link href="/admin/orderHistory">
             <Image
               src="/adminImgs/editing/detail.svg"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               alt="detail"
             />
-          </button>
+          </Link>
           <button>
             <Image
               src="/adminImgs/editing/delete.svg"

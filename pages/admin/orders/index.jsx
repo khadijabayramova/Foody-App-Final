@@ -5,9 +5,8 @@ import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
 function Orders() {
   return (
     <AdminLayout>
-      <div className="w-full">
+      <div className="w-[82%]">
         <Button name="Orders" />
-
         <TableComponent />
       </div>
     </AdminLayout>
