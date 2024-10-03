@@ -1,10 +1,35 @@
 import React from "react";
 import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
-import OffersTable from "../../../components/pages/offers/OffersTable/OffersTable";
 import Button from "../../../components/shared/Button/page";
+import TableComponent from "../../../components/pages/TableComponent/TableComponent";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Offers() {
-  const data = new Array(16).fill(1);
+  const headers = ["ID", "Image", "Title", " Descrtiption"];
+
+  const data = [
+    {
+      id: 1,
+      Image: "/adminImgs/admin-category/fastfood.svg",
+      title: "Do you like Pizza at Pap...",
+
+      description: "30 Eve Street, 543 Evenue Road, Ny 87876",
+    },
+    {
+      id: 1,
+      Image: "/adminImgs/admin-category/fastfood.svg",
+      title: "Do you like Pizza at Pap...",
+      description: "30 Eve Street, 543 Evenue Road, Ny 87876",
+    },
+    {
+      id: 1,
+      Image: "/adminImgs/admin-category/fastfood.svg",
+      title: "Do you like Pizza at Pap...",
+
+      description: "30 Eve Street, 543 Evenue Road, Ny 87876",
+    },
+  ];
 
   return (
     <AdminLayout>
@@ -15,26 +40,47 @@ export default function Offers() {
           add="Add Offer"
           innertext="+ Add Offer"
         />
-        <div className="overflow-y-auto h-[61vh] mt-4 ">
-          <table class="min-w-full bg-white text-black border   ">
-            <thead>
-              <tr>
-                <th class="px-8 py-4 text-start">Id</th>
-                <th class="px-8 py-4 text-start">Image</th>
-                <th class="px-8 py-4 text-start">Title</th>
-                <th class="px-8 py-4 text-start">Descriptions</th>
-              </tr>
-            </thead>
-            {data.map(() => (
-              <OffersTable
-                id="12122"
-                image="/adminImgs/admin-category/fastfood.svg"
-                title="fast food asdasdasdasdasdasdasdss asdasdasdasdasdasdasdssasdasdasdasdasdasdasdss"
-                desc="fastfood asdasdasdasdasdasdasdssasdasdasdasdasdasdasdss"
-              />
-            ))}
-          </table>
-        </div>
+
+        <TableComponent headers={headers}>
+          {data.map((row, index) => (
+            <tr key={index}>
+              <td className="px-8 py-4 border-y ">
+                <span className="border border-#DFE2E9 px-4 py-1 rounded-3xl">
+                  {row.id}
+                </span>
+              </td>
+              <td className="px-8 py-4 border-y ">
+                <Image src={row.Image} width={40} height={40} alt="image" />
+              </td>
+              <td className="px-8 py-4 border-y truncate max-w-10">
+                {row.title}
+              </td>
+              <td className="px-8 py-4 border-y truncate max-w-10">
+                {row.description}
+              </td>
+              <td className="px-8 py-4 border-y ">
+                <div className="flex gap-2">
+                  <button>
+                    <Image
+                      src="/adminImgs/editing/edit.svg"
+                      width={20}
+                      height={20}
+                      alt="edit"
+                    />
+                  </button>
+                  <button>
+                    <Image
+                      src="/adminImgs/editing/delete.svg"
+                      width={20}
+                      height={20}
+                      alt="delete"
+                    />
+                  </button>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </TableComponent>
       </div>
     </AdminLayout>
   );
