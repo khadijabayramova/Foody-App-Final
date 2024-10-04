@@ -7,21 +7,27 @@ import { GlobalContext } from "../../../Context/globalcontext";
 
 export default function Productspage() {
   const { openPopup } = useContext(GlobalContext);
-  const data = new Array(15).fill(1);
+  const data = new Array(15).fill(1); // Sample data
 
   return (
     <AdminLayout>
       <div className="w-[82%]">
         <Dropdown name="Products" selection="Sea Foods" />
-        <div className="grid grid-cols-5 grid-rows-3 gap-x-10 gap-y-9 mt-14 ">
-          {data.map((_, index) => (
-            <Productscard
-              key={index}
-              title="Margarita"
-              restaurant="papajons"
-              price="16.9$"
-            />
-          ))}
+
+        {/* Adjusted Scrollable Container */}
+        <div className="overflow-y-auto max-h-[400px] mt-14">
+          {" "}
+          {/* Fixed max height */}
+          <div className="grid grid-cols-5 gap-x-10 gap-y-9">
+            {data.map((_, index) => (
+              <Productscard
+                key={index}
+                title="Margarita"
+                restaurant="papajons"
+                price="16.9$"
+              />
+            ))}
+          </div>
         </div>
 
         {openPopup && <Popup />}

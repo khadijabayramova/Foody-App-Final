@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../../components/shared/Button/page";
+import Sharebutton from "../../../components/shared/sharebutton/index";
 import InputGroup from "../../../components/shared/InputGroup";
 import Image from "next/image";
 import loginHero from "../../../public/adminImgs/loginHero.svg";
@@ -17,7 +17,12 @@ function Login() {
           <h1 className="text-3xl font-bold text-white">Welcome Admin</h1>
           <InputGroup type="email" placeholder=" Email" />
           <InputGroup type="password" placeholder=" Password" />
-          <Button className="hover:opacity-80 active:opacity-85" innertext="Sign in" />
+          <div className="w-[70%]  ">
+            <Sharebutton
+              className="bg-btnColor w-full py-3 justify-center items-center flex  hover:opacity-85 active:opacity-80 transition-opacity duration-200 "
+              btnName="Sign in"
+            />
+          </div>
         </form>
         <div className="bg-white w-3/5 flex items-start justify-center py-3">
           <Image className="h-[400px] " src={loginHero} alt="loginHero" />

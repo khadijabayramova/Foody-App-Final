@@ -25,9 +25,9 @@ module.exports = {
         bgadditional:"#38394E",
         bgwt:"#fff",
         bgdelete:"#D63626",
-        textcancel:"#BDBDBD"
-      
-        
+        textcancel:"#BDBDBD",
+        inputbg:"#43445A",
+    
 
         
       },
