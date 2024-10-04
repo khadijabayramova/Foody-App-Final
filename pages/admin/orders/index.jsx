@@ -1,14 +1,16 @@
 import React from "react";
 import TableComponent from "../../../components/pages/tablecomp/TableComponent";
 import Button from "../../../components/shared/Button/page";
+import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
 function Orders() {
-  
   return (
-    <div className="w-full">
-      <Button name="Orders" />
+    <AdminLayout>
+      <div className="w-full">
+        <Button name="Orders" />
 
-      <TableComponent />
-    </div>
+        <TableComponent />
+      </div>
+    </AdminLayout>
   );
 }
 
