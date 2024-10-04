@@ -1,13 +1,12 @@
 import React from "react";
 import AdminLayout from "../components/layout/AdminLayout/AdminLayout";
-import Additionalpage from "../components/shared/additionalpage/index";
-import Orders from "./admin/orders";
+import Additional from "../components/shared/additional/index";
 
 export default function Home() {
   return (
     <>
       <AdminLayout>
-        <div>salam</div>
+        <Additional />
       </AdminLayout>
     </>
   );

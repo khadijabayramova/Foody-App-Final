@@ -2,7 +2,7 @@ import React from "react";
 import InputGroup from "../InputGroup";
 import Button from "../Button/page";
 import UploadPage from "../upload/upload";
-export default function Additionalpage() {
+export default function Additional() {
   return (
     <div className="flex flex-col gap-40 bg-bgadditional w-3/5">
       {/* solid input */}

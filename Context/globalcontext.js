@@ -4,6 +4,7 @@ const GlobalContext = createContext({openPopup: false, setOpenPopup: () => {}});
 
 function GlobalProvider({ children }) {  // No `default` here
   const [openPopup, setOpenPopup] = useState(false);
+  const [openfiles,setOpenfiles] =useState(false)
   console.log("openPopup", openPopup);
   return (
     <GlobalContext.Provider value={{ openPopup, setOpenPopup }}>
