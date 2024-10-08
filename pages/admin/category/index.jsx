@@ -1,10 +1,32 @@
 import React from "react";
 import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
-import CategoryTable from "../../../components/pages/category/CategoryTable/CategoryTable";
 import Button from "../../../components/shared/Button/page";
+import TableComponent from "../../../components/pages/TableComponent/TableComponent";
+import Image from "next/image";
 
 export default function Category() {
-  const data = new Array(16).fill(1);
+  const headers = ["ID", "Image", "Name", "Slug"];
+
+  const data = [
+    {
+      id: 1,
+      Image: "/adminImgs/admin-category/fastfood.svg",
+      name: "Fries",
+      slug: "yummy pizza",
+    },
+    {
+      id: 1,
+      Image: "/adminImgs/admin-category/fastfood.svg",
+      name: "Fries",
+      slug: "yummy pizza",
+    },
+    {
+      id: 1,
+      Image: "/adminImgs/admin-category/fastfood.svg",
+      name: "Fries",
+      slug: "yummy pizza",
+    },
+  ];
 
   return (
     <>
@@ -17,21 +39,44 @@ export default function Category() {
             innertext="+ Add Restaurant"
           />
 
-          <div className="overflow-y-auto h-[61vh] mt-4 ">
-            <table class="min-w-full bg-white text-black border   ">
-              <thead>
-                <tr>
-                  <th class="px-8 py-4 text-start">Id</th>
-                  <th class="px-8 py-4 text-start">Image</th>
-                  <th class="px-8 py-4 text-start">Name</th>
-                  <th class="px-8 py-4 text-start">Slug</th>
-                </tr>
-              </thead>
-              {data.map(() => (
-                <CategoryTable id="12122" name="fast food" slug="fastfood" />
-              ))}
-            </table>
-          </div>
+          <TableComponent headers={headers}>
+            {data.map((row, index) => (
+              <tr key={index}>
+                <td className="px-8 py-4 border-y ">
+                  <span className="border border-#DFE2E9 px-4 py-1 rounded-3xl">
+                    {row.id}
+                  </span>
+                </td>
+                <td className="px-8 py-4 border-y ">
+                  <Image src={row.Image} width={40} height={40} />
+                </td>
+                <td className="px-8 py-4 border-y ">{row.name}</td>
+                <td className="px-8 py-4 border-y truncate max-w-10 ">
+                  {row.slug}
+                </td>
+                <td className="px-8 py-4 border-y ">
+                  <div className="flex gap-2">
+                    <button>
+                      <Image
+                        src="/adminImgs/editing/edit.svg"
+                        width={20}
+                        height={20}
+                        alt="edit"
+                      />
+                    </button>
+                    <button>
+                      <Image
+                        src="/adminImgs/editing/delete.svg"
+                        width={20}
+                        height={20}
+                        alt="delete"
+                      />
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </TableComponent>
         </div>
       </AdminLayout>
     </>
