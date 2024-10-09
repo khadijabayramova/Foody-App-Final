@@ -1,7 +1,9 @@
 .navbar {
+  position: relative; // Add this line to make the navbar relative
   display: flex;
   align-items: center;
   justify-content: center;
+
   &__box {
     width: calc(100% - 32px);
     display: flex;
@@ -15,6 +17,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
+      
       & .burger__button {
         display: none;
       }
@@ -25,7 +28,6 @@
       align-items: center;
       justify-content: center;
       gap: 24px;
-
       font-weight: 600;
     }
   }

@@ -19,7 +19,11 @@ const links = [
     href: "/admin/category",
     src: "/adminImgs/category.svg",
   },
-  { name: "Orders", href: "/admin/orders", src: "/adminImgs/orders.svg" },
+  {
+    name: "Orders",
+    href: "/admin/orders",
+    src: "/adminImgs/orders.svg",
+  },
   { name: "Offer", href: "/admin/offers", src: "/adminImgs/offer.svg" },
   { name: "Logout", href: "/admin/login", src: "/adminImgs/logout.svg" },
 ];

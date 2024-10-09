@@ -7,8 +7,13 @@ import {
   AddIcon,
   BurgerIcon,
 } from "../../../../assets/images/admin/admin.vector";
+import { useContext } from "react";
+import { GlobalContext } from "../../../../Context/globalcontext";
 
+import AddProducts from "../../../pages/addproducts/index";
 export default function Navbar() {
+  const { openaddproducts } = useContext(GlobalContext);
+
   return (
     <>
       <div className={styles.navbar}>
@@ -26,12 +31,15 @@ export default function Navbar() {
           </div>
           <div className={styles.navbar__right}>
             <Button icon={AddIcon} hideTextOnMobile={true} />
+            {console.log(Button)}
             <div className={styles.language}>
               <Languages />
             </div>
             <button>Admin</button>
           </div>
         </div>
+
+        {openaddproducts && <AddProducts/>}
       </div>
     </>
   );

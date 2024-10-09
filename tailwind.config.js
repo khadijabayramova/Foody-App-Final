@@ -20,16 +20,16 @@ module.exports = {
         restautanColor: "#828282",
         bgcards: "#27283C",
         productstitle: "#00B2A9",
-        productsdesc : "#8E8E93",
-        bgoptions:"#5A5B70",
-        bgadditional:"#38394E",
-        bgwt:"#fff",
-        bgdelete:"#D63626",
-        textcancel:"#BDBDBD",
-        inputbg:"#43445A",
-    
-
-        
+        productsdesc: "#8E8E93",
+        bgoptions: "#5A5B70",
+        bgadditional: "#38394E",
+        bgwt: "#fff",
+        bgdelete: "#D63626",
+        textcancel: "#BDBDBD",
+        inputbg: "#43445A",
+      },
+      dropShadow: {
+        "3xl": " 0px 4px 4px 0px #27AE6033",
       },
     },
   },
