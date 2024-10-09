@@ -1,5 +1,5 @@
 import React from "react";
-import TableComponent from "../../../components/pages/tablecomp/TableComponent";
+import TableComponent from "../../../components/pages/TableComponent/TableComponent";
 import Button from "../../../components/shared/Button/page";
 import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
 function Orders() {

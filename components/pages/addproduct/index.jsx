@@ -7,7 +7,7 @@ function AddProduct() {
   const { handleAddProducts } = useContext(GlobalContext);
   return (
     <div
-      className={` w-[80%] absolute top-0 -right-48
+      className={` w-[80%] absolute top-0 -right-2.5
           h-full transition-transform duration-300 ${
         handleAddProducts ? "right-0" : "-right-full"
       }`}
@@ -18,6 +18,7 @@ function AddProduct() {
         guider="Upload your product image"
         desc="Add your Product description and necessary information"
         inputs={<Inputs />}
+        
       />
     </div>
   );
