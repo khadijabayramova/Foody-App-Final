@@ -3,7 +3,9 @@ import AdminLayout from "../../../components/layout/AdminLayout/AdminLayout";
 import Button from "../../../components/shared/Button/page";
 import TableComponent from "../../../components/pages/TableComponent/TableComponent";
 import Image from "next/image";
-
+import AddCategory from "../../../components/pages/addcategory";
+import { GlobalContext } from "../../../Context/globalcontext";
+import { useContext } from "react";
 export default function Category() {
   const headers = ["ID", "Image", "Name", "Slug"];
 
@@ -27,7 +29,7 @@ export default function Category() {
       slug: "yummy pizza",
     },
   ];
-
+  const { opencategory, setOpenCategory } = useContext(GlobalContext);
   return (
     <>
       <AdminLayout>
@@ -37,6 +39,7 @@ export default function Category() {
             name="Category"
             add="Add Category"
             innertext="+ Add Restaurant"
+            onClick={() => setOpenCategory(true)}
           />
 
           <TableComponent headers={headers}>
@@ -77,6 +80,7 @@ export default function Category() {
               </tr>
             ))}
           </TableComponent>
+          {opencategory && <AddCategory/>}
         </div>
       </AdminLayout>
     </>

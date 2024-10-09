@@ -1,5 +1,5 @@
 import React from "react";
-import InputGroup from "../../InputGroup";
+import InputGroup from "../../../shared/InputGroup";
 
 function Inputs() {
   return (
@@ -28,22 +28,23 @@ function Inputs() {
         className="bg-bgoptions h-10 w-96 rounded-xl"
       />
       <InputGroup
-        for="Delivery"
-        id="Delivery"
+        for="delivery"
+        id="delivery"
         labeltext="Delivery Min"
         type="text"
         className="bg-bgoptions h-10 w-96 rounded-xl"
       />
       <InputGroup
-        for="Address"
-        id="Address"
+        for="address"
+        id="address"
         labeltext="Address"
         type="text"
         className="bg-bgoptions h-10 w-96 rounded-xl"
       />
+
       <InputGroup
-        for="restaurants"
-        id="restaurants"
+        for="category"
+        id="category"
         labeltext="Category"
         type="text"
         className="bg-bgoptions h-10 w-96 rounded-xl"

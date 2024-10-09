@@ -9,8 +9,9 @@ function Inputs() {
         id="name"
         labeltext="Name"
         type="text"
-        className="bg-bgoptions h-10 pl-4 w-96 rounded-xl"
+        className="bg-bgoptions h-10 w-96 rounded-xl"
       />
+     
     </div>
   );
 }

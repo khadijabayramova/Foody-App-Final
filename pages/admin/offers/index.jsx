@@ -4,6 +4,9 @@ import Button from "../../../components/shared/Button/page";
 import TableComponent from "../../../components/pages/TableComponent/TableComponent";
 import Link from "next/link";
 import Image from "next/image";
+import { GlobalContext } from "../../../Context/globalcontext";
+import { useContext } from "react";
+import AddOffers from "../../../components/pages/addoffers";
 
 export default function Offers() {
   const headers = ["ID", "Image", "Title", " Descrtiption"];
@@ -30,6 +33,7 @@ export default function Offers() {
       description: "30 Eve Street, 543 Evenue Road, Ny 87876",
     },
   ];
+  const { openoffers, setOpenoffers } = useContext(GlobalContext);
 
   return (
     <AdminLayout>
@@ -39,6 +43,7 @@ export default function Offers() {
           name="Offers"
           add="Add Offer"
           innertext="+ Add Offer"
+          onClick={() => setOpenoffers(true)}
         />
 
         <TableComponent headers={headers}>
@@ -81,6 +86,7 @@ export default function Offers() {
             </tr>
           ))}
         </TableComponent>
+        {openoffers && <AddOffers />}
       </div>
     </AdminLayout>
   );
