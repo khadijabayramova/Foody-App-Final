@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../../components/shared/Button/Button";
-import InputGroup from "../../../components//shared/InputGroup/InputGroup";
+import InputGroup from "../../../components//shared/InputGroup/index";
 import Image from "next/image";
 import loginHero from "../../../public/adminImgs/loginHero.svg";
 import Flag from "../../../public/adminImgs/englandflag.svg";
