@@ -17,4 +17,4 @@ const authData = {
   universe_domain: process.env.NEXT_PUBLIC_GOOGLE_UNIVERSE_DOMAIN,
 };
 
-module.exports = authData;
+export default authData;
