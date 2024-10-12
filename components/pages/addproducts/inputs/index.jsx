@@ -2,6 +2,7 @@ import React from "react";
 import InputGroup from "../../../shared/InputGroup";
 
 function Inputs() {
+  
   return (
     <div className="flex flex-col gap-6 p-5">
       <InputGroup

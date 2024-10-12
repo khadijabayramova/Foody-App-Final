@@ -4,14 +4,14 @@ import Sharebutton from "../../shared/sharebutton/index";
 import { useContext } from "react";
 import { GlobalContext } from "../../../Context/globalcontext";
 import Inputs from "./inputs/index";
-export default function AddCategory() {
+export default function AddOffers() {
   const { setOpenoffers, image, resetform } = useContext(GlobalContext);
 
   return (
     <section className="flex flex-col gap-20 p-5 absolute top-0 -right-2.5 bg-bgadditional w-[67%] h-[120vh]">
       <div className="flex flex-col gap-4 w-full ">
         <div className="flex flex-col w-full gap-4">
-          <p className="text-2xl font-bold">Add Category</p>
+          <p className="text-2xl font-bold">Add Offer</p>
           <p className="text-lg">Upload your product image</p>
         </div>
 
@@ -28,7 +28,7 @@ export default function AddCategory() {
                 className="object-contain h-full"
               />
             ) : (
-              ""
+             ""
             )}{" "}
           </div>
           <Uploader />
@@ -36,7 +36,7 @@ export default function AddCategory() {
       </div>
 
       <div className="flex gap-40">
-        <p className="text-lg w-[30%]">Add your Category information</p>
+        <p className="text-lg w-[30%]">Add your Offer information</p>
         <div className="bg-inputbg w-3/6 justify-center items-center rounded-xl flex">
           <Inputs />
         </div>

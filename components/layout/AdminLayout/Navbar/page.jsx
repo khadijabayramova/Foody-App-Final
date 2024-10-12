@@ -9,7 +9,8 @@ import {
 } from "../../../../assets/images/admin/admin.vector";
 import { useContext } from "react";
 import { GlobalContext } from "../../../../Context/globalcontext";
-import AddProduct from "../../../pages/addproduct";
+
+import AddProducts from "../../../pages/addproducts/index";
 export default function Navbar() {
   const { openaddproducts } = useContext(GlobalContext);
 
@@ -29,7 +30,7 @@ export default function Navbar() {
             />
           </div>
           <div className={styles.navbar__right}>
-            <Button  icon={AddIcon} hideTextOnMobile={true} />
+            <Button icon={AddIcon} hideTextOnMobile={true} />
             {console.log(Button)}
             <div className={styles.language}>
               <Languages />
@@ -38,7 +39,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {openaddproducts && <AddProduct />}
+        {openaddproducts && <AddProducts/>}
       </div>
     </>
   );
