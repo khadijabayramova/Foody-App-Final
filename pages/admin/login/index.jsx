@@ -15,8 +15,16 @@ function Login() {
           className="flex w-3/6 h-[425px] justify-center items-center  bg-[#38394E] flex-col gap-10 "
         >
           <h1 className="text-3xl font-bold text-white">Welcome Admin</h1>
-          <InputGroup className="h-[50px] pl-3 text-xl bg-bgoptions" type="email" placeholder=" Email" />
-          <InputGroup className="h-[50px] pl-3 text-xl bg-bgoptions" type="password" placeholder=" Password" />
+          <InputGroup
+            className="h-[50px] pl-3 text-xl bg-bgoptions"
+            type="email"
+            placeholder=" Email"
+          />
+          <InputGroup
+            className="h-[50px] pl-3 text-xl bg-bgoptions"
+            type="password"
+            placeholder=" Password"
+          />
           <div className="w-[70%]  ">
             <Sharebutton
               className="bg-btnColor w-full py-3 justify-center items-center flex  hover:opacity-85 active:opacity-80 transition-opacity duration-200 "
