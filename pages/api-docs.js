@@ -20,7 +20,7 @@ function ApiDoc({ spec }) {
           href="https://w7.pngwing.com/pngs/713/936/png-transparent-online-shopping-shopping-cart-logo-e-commerce-market-blue-angle-company-thumbnail.png"
         />
       </Head>
-      <div style={{ margin: "40px 0" }}>
+      <div style={{ margin: "40px 0", backgroundColor: "#fff", width: "100%" }}>
         <SwaggerUI spec={spec} />
       </div>
     </>

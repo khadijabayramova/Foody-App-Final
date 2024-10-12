@@ -1,8 +1,9 @@
 // firebaseAdmin.js
 import admin from "firebase-admin";
+import authData from "./config";
 
 if (!admin.apps.length) {
-  const serviceAccount = require("./foodyapp-51b6e-firebase-adminsdk-1f971-aef5cf5866.json"); // Replace with your own path
+  const serviceAccount = authData; // Replace with your own path
 
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
